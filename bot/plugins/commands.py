@@ -35,7 +35,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    'JoIN the CHANNEL', url="https://t.me/M_STER_TECH"
                                 )
                         ]
                     ]
@@ -47,10 +47,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
+        InlineKeyboardButton('MR', url='https://t.me/M_STER_TECH'),
+        InlineKeyboardButton('GROUP', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+        InlineKeyboardButton('CHANNEL', url='https://t.me/CrazyBotszGrp')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
@@ -70,8 +70,8 @@ async def start(bot, update):
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('About 🚩', callback_data='about')
+        InlineKeyboardButton('CHANNEL', url='https://t.me/CrazyBotszGrp'),
+        InlineKeyboardButton('About 🚩', url='https://t.me/CrazyBotszGrp')
     ],[
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
